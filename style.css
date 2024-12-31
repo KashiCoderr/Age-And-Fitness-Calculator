@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.calculator-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input[type="date"] {
+    padding: 12px;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: #00b4d8;
+}
+
+button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00b4d8;
+}
+
+.result-section, .workout-section {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+}
+
+.age-result {
+    font-size: 1.5rem;
+    color: #0077b6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.workout-plan {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workout-plan h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.workout-plan ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.workout-plan li {
+    margin: 5px 0;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .calculator-box {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

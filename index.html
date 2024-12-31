@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age & Fitness Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-box">
+            <h1>Age & Fitness Calculator</h1>
+            <div class="input-section">
+                <label for="dob">Enter Your Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <button onclick="calculateAge()">Calculate Age & Get Workout Plan</button>
+            </div>
+            <div class="result-section" id="result">
+                <!-- Results will be displayed here -->
+            </div>
+            <div class="workout-section" id="workout">
+                <!-- Workout suggestions will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
